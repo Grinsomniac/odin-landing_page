@@ -1,17 +1,24 @@
 header {
-    border: 2px solid blue;
     background-color: #1F2937;
     color: #F9FAF8;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: auto; /*Width*/
     height: 400px;
-
 }
 
+.navCont {
+    border: 6px solid rgb(128, 0, 94);
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    max-width: 2000px;
+    padding: 0 20px;
+ }
+
 .logoCont {
-    border: 4px solid green;
     padding: 10px;
     width: auto;
     margin-left: 20px;
@@ -26,22 +33,15 @@ header {
     
 }
 
-.navCont {
-    border: 6px solid green;
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    height: 75px;
- }
-
  .navLinkCont {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
+    width: 400px;
+    align-items: center;
  }
 
  .navLink {
-    border: 2px solid rgb(107, 64, 226);
+
  }
 
 /*TO-DO*/
