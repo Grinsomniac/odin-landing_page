@@ -1,15 +1,22 @@
+
+body {
+    max-width: 1652px;
+    margin: 0 auto;
+}
 header {
     background-color: #1F2937;
     color: #F9FAF8;
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
-    width: auto; /*Width*/
-    height: 400px;
+    flex-wrap: wrap;
+    /*width: auto; /*Width*/
+    max-width: 1642px;
+    height: 465px;
 }
 
 .navCont {
-    /*border: 6px solid rgb(128, 0, 94);*/
+    border: 6px solid rgb(128, 0, 94);
     display: flex;
     justify-content: space-between;
     height: 75px;
@@ -45,11 +52,48 @@ header {
     color: #E5E7EB;
  }
 
+.hero {
+    border: 3px solid green;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    flex-direction: space-between;
+
+}
+
+.heroText {
+    border: 2px solid blue;
+    margin: 25px;
+    margin-left: 175px;
+    width: 500px;
+    height: 70%;
+}
+.heroText h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color:#F9FAF8;
+    max-width: 400px;
+}
+
+.heroText p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: left
+}
+
+.heroImg {
+    border: 2px solid red;
+}
 /*TO-DO*/
 main {
     
 }
 
+
+/*GOOD*/
 h2 {
     text-align: center;
     font-size: 36px;
@@ -71,8 +115,6 @@ h2 {
     width: 120px;
     height: 125px;
 }
-
-/*GOOD*/
 
 footer {
     border: 2px solid #1F2937;
