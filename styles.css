@@ -9,7 +9,7 @@ header {
 }
 
 .navCont {
-    border: 6px solid rgb(128, 0, 94);
+    /*border: 6px solid rgb(128, 0, 94);*/
     display: flex;
     justify-content: space-between;
     height: 75px;
@@ -41,7 +41,8 @@ header {
  }
 
  .navLink {
-
+    font-size: 18px;
+    color: #E5E7EB;
  }
 
 /*TO-DO*/
@@ -65,7 +66,10 @@ h2 {
 }
 
 .img {
-
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    width: 120px;
+    height: 125px;
 }
 
 /*GOOD*/
