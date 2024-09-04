@@ -151,6 +151,10 @@ h2 {
     font-size: 36px;
     font-family: Roboto, sans-serif;
     text-align: left;
+    max-width: 75%;
+    text-align: center;
+    margin-left: 200px;
+    border: 2px solid blue;
 }
 
 .quoteAuthor {
@@ -159,6 +163,7 @@ h2 {
     font-weight: 900;
     font-family: Roboto, sans-serif;
     text-align: right;
+    border: 3px solid red;
 }
 
 footer {
@@ -169,3 +174,7 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+/* TO-DO - normalize styles. 
+    1. classes for commons i.e. border
+    2. group font, background color, sizing etc. 
