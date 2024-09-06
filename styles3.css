@@ -159,6 +159,37 @@ h2 {
     margin-top: 20px;
 }
 
+/* Call to Action Section */
+.callToAction {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    margin-top: 50px;
+}
+
+.ctaText {
+    font-size: 18px;
+}
+
+.ctaText h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.ctaButton button {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
 /* Footer Section */
 footer {
     background-color: #1F2937;
