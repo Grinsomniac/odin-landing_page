@@ -75,7 +75,8 @@ header {
 .heroText {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 400px;
+    margin-left: 10%;
 }
 
 .heroText h1 {
@@ -154,14 +155,14 @@ h2 {
 .quoteArea {
     background-color: #E5E7EB;
     padding: 60px 10%;
-    text-align: left;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .quoteWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -169,19 +170,21 @@ h2 {
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
+    font-weight: lighter;
     max-width: 75%;
-    margin-right: auto;
+    align-self: center;
 }
 
 .quoteAuthor {
     color: #1F2937;
     font-size: 18px;
     font-weight: 900;
-    margin-left: auto;
-    align-self: flex-end;
+    max-width: 75%;
+    margin-left: 100px;
+    align-self: center;
+    text-align: right;
 }
 
-/* Call to Action Section */
 /* Call to Action Section */
 .callToAction {
     background-color: #3882F6; /* Background color matching the button color */
@@ -201,7 +204,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid red;
     height: 100px;
     margin-left: 80px;
     margin-bottom: 5%;
@@ -210,7 +212,6 @@ h2 {
 .callToActionText h2 {
     font-size: 24px;
     font-weight: 900;
-    margin-bottom: 10px;
     text-align: left;
     color:#F9FAF8;
 }
@@ -232,6 +233,7 @@ h2 {
     cursor: pointer;
     margin-bottom: 15%;
     margin-right:40px;
+    translate: -50px;
 }
 /* Footer Section */
 footer {
