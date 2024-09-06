@@ -20,18 +20,27 @@ header {
     height: 465px;
 }
 
-/* Navigation */
-.navCont {
+.navCont, .hero {
     display: flex;
     justify-content: space-between;
-    height: 75px;
     width: 100%;
     padding: 0 20px;
 }
 
-.logoCont {
+.navCont {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.logoCont, .navLinkCont {
     display: flex;
     align-items: center;
+}
+
+.logoCont {
+    padding: 10px;
+    margin-left: 20px;
 }
 
 #logo {
@@ -45,9 +54,12 @@ header {
     align-items: center;
 }
 
+.navLink, .heroText p, button, .quoteAuthor {
+    color: #E5E7EB;
+}
+
 .navLink {
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 /* Hero Section */
@@ -141,53 +153,71 @@ h2 {
 .quoteArea {
     background-color: #E5E7EB;
     padding: 60px 10%;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.quoteWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .quote {
-    font-size: 36px;
     color: #1F2937;
+    font-size: 36px;
     font-style: italic;
     max-width: 75%;
-    margin: 0 auto;
+    margin-right: auto;
 }
 
 .quoteAuthor {
+    color: #1F2937;
     font-size: 18px;
     font-weight: 900;
-    color: #1F2937;
-    margin-top: 20px;
+    margin-left: auto;
+    align-self: flex-end;
 }
 
 /* Call to Action Section */
 .callToAction {
     background-color: #3882F6;
     color: #F9FAF8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 600px;
 }
 
-.ctaText {
-    font-size: 18px;
-}
-
-.ctaText h2 {
+.callToAction h2 {
     font-size: 24px;
     font-weight: 900;
+    margin-bottom: 10px;
+    color: #F9FAF8;
 }
 
-.ctaButton button {
+.callToAction p {
+    font-size: 16px;
+    color: #F9FAF8;
+    margin-bottom: 20px;
+}
+
+.callToAction button {
     background-color: #F9FAF8;
     color: #3882F6;
     font-size: 18px;
     font-weight: 700;
     border: none;
-    border-radius: 8px;
-    padding: 12px 25px;
+    border-radius: 20px;
+    padding: 12px 30px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.callToAction button:hover {
+    background-color: #E5E7EB;
 }
 
 /* Footer Section */
@@ -196,8 +226,12 @@ footer {
     color: #F9FAF8;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
 }
 
 footer p {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
