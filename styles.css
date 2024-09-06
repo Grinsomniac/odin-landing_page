@@ -1,12 +1,18 @@
+/* Global Styles */
 body {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, p {
+    margin: 0;
+}
+
+/* Header Section */
 header {
     background-color: #1F2937;
     color: #F9FAF8;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -14,117 +20,122 @@ header {
     height: 465px;
 }
 
-.navCont {
-    border: 6px solid rgb(128, 0, 94);
+.navCont, .hero {
     display: flex;
     justify-content: space-between;
-    height: 75px;
     width: 100%;
     padding: 0 20px;
 }
 
-.logoCont {
-    padding: 10px;
+.navCont {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.logoCont, .navLinkCont {
     display: flex;
     align-items: center;
+}
+
+.logoCont {
+    padding: 10px;
     margin-left: 20px;
 }
 
 #logo {
-    color: #F9FAF8;
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    color: #F9FAF8;
 }
 
 .navLinkCont {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
+    gap: 30px;
     align-items: center;
+}
+
+.navLink, .heroText p, button, .quoteAuthor {
+    color: #E5E7EB;
 }
 
 .navLink {
     font-size: 18px;
-    color: #E5E7EB;
 }
 
+/* Hero Section */
 .hero {
-    border: 3px solid green;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 300px;
+    padding: 0 50px;
     width: 100%;
 }
 
 .heroText {
-    border: 2px solid purple;
-    padding-bottom: 10px;
-    margin-left: 175px;
-    width: 500px;
-    height: 70%;
     display: flex;
     flex-direction: column;
+    width: 400px;
+    margin-left: 10%;
+}
+
+.heroText h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.heroTextText p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
 }
 
 button {
     background-color: #3882F6;
     font-size: 18px;
     color: #E5E7EB;
+    border: none;
     border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
     width: 140px;
-    margin-top: 1px;
-}
-
-.heroText h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    color: #F9FAF8;
-    max-width: 400px;
-    margin-bottom: 10px;
-}
-
-.heroTextText {
-    width: 450px;
-}
-
-.heroText p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #E5E7EB;
-    text-align: left;
-    margin-top: 0;
 }
 
 .heroImg {
-    border: 2px solid red;
-    margin-left: 40px;
-    width: 300px;
-    height: 240px;
+    background-color: #9CA3AF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    color: #F9FAF8;
+    font-size: 18px;
+    text-align: center;
 }
 
+/* Main Section */
 h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
 }
 
 .imgRowCont {
     display: flex;
     justify-content: space-between;
-    margin: 35px 20%;
-    margin-bottom: 125px;
+    margin: 35px 10%;
 }
 
-.imageContainer {
+.imgContainer {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     width: 120px;
     text-align: center;
-    border: 2px solid pink;
 }
 
 .img {
@@ -134,47 +145,108 @@ h2 {
     height: 125px;
 }
 
+.imgSubtext {
+    font-size: 14px;
+    color: #1F2937;
+    margin-top: 10px;
+}
+
+/* Quote Area */
 .quoteArea {
     background-color: #E5E7EB;
-    border: 2px solid red;
-    max-width: 1642px;
-    height: 380px;
+    padding: 60px 10%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
+}
+
+.quoteWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .quote {
     color: #1F2937;
-    font-style: light, italic;
     font-size: 36px;
-    font-family: Roboto, sans-serif;
-    text-align: left;
+    font-style: italic;
+    font-weight: lighter;
     max-width: 75%;
-    text-align: center;
-    margin-left: 200px;
-    border: 2px solid blue;
+    align-self: center;
 }
 
 .quoteAuthor {
     color: #1F2937;
     font-size: 18px;
     font-weight: 900;
-    font-family: Roboto, sans-serif;
+    max-width: 75%;
+    margin-left: 100px;
+    align-self: center;
     text-align: right;
-    border: 3px solid red;
 }
 
+/* Call to Action Section */
+.callToAction {
+    background-color: #3882F6; /* Background color matching the button color */
+    color: #F9FAF8; /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Padding to create spacing inside the container */
+    border-radius: 12px; /* Slight rounded corners */
+    margin: 50px auto;
+    max-width: 875px; /* Set a reasonable max width to center the content */
+    height: 80px;
+}
+
+.callToActionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    margin-left: 80px;
+    margin-bottom: 5%;
+}
+
+.callToActionText h2 {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    color:#F9FAF8;
+}
+
+.callToActionText p {
+    font-size: 16px;
+    color: #F9FAF8;
+    text-align: left;
+}
+
+.callToActionButton button {
+    background-color: transparent; /* Transparent background to match the design */
+    color: #F9FAF8; /* White border and text */
+    border: 2px solid #F9FAF8; /* White border for the button */
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 15%;
+    margin-right:40px;
+    translate: -50px;
+}
+/* Footer Section */
 footer {
-    border: 2px solid #1F2937;
     background-color: #1F2937;
     color: #F9FAF8;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
+    padding: 20px 0;
     width: 100%;
 }
 
-/* TO-DO - normalize styles. 
-    1. classes for commons i.e. border
-    2. group font, background color, sizing etc. 
+footer p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
