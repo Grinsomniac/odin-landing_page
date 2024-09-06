@@ -1,0 +1,165 @@
+/* Global Styles */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1642px;
+    height: 465px;
+}
+
+.navCont, .hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navCont {
+    border: 6px solid rgb(128, 0, 94);
+    height: 75px;
+}
+
+.logoCont, .navLinkCont {
+    display: flex;
+    align-items: center;
+}
+
+.logoCont {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+.navLinkCont {
+    width: 400px;
+    justify-content: space-between;
+}
+
+.navLink, .heroText p, button, .quoteAuthor {
+    color: #E5E7EB;
+}
+
+.navLink {
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    border: 3px solid green;
+    align-items: center;
+    height: 300px;
+}
+
+.heroText {
+    border: 2px solid purple;
+    margin-left: 175px;
+    width: 500px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #3882F6;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 140px;
+    margin-top: 1px;
+}
+
+.heroText h1 {
+    font-weight: 900;
+    font-size: 48px;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.heroTextText {
+    width: 450px;
+}
+
+.heroImg {
+    border: 2px solid red;
+    margin-left: 40px;
+    width: 300px;
+    height: 240px;
+}
+
+/* Main Section */
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.imgRowCont {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 20%;
+    margin-bottom: 125px;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    border: 2px solid pink;
+}
+
+.img {
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    width: 120px;
+    height: 125px;
+}
+
+/* Quote Area */
+.quoteArea {
+    background-color: #E5E7EB;
+    border: 2px solid red;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.quote {
+    color: #1F2937;
+    font-style: italic;
+    font-size: 36px;
+    max-width: 75%;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+
+.quoteAuthor {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: right;
+    border: 3px solid red;
+}
+
+/* Footer Section */
+footer {
+    border: 2px solid #1F2937;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    width: 100%;
+}
